@@ -1,0 +1,22 @@
+# Data
+/data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Large artifacts not suitable for GitHub
+/results_v4/models/v4_pipeline.pkl

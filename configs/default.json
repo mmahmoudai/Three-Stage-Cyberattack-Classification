@@ -1,0 +1,42 @@
+{
+  "seed": 42,
+  "data": {
+    "csv_path": "data/cicddos2019_dataset.csv",
+    "protocol_col": "Protocol",
+    "class_col": "Class",
+    "category_col": "Category",
+    "benign_label": "Benign",
+    "attack_label": "Attack"
+  },
+  "split": {
+    "train_size": 0.7,
+    "val_size": 0.15,
+    "test_size": 0.15
+  },
+  "tuning": {
+    "enabled": true,
+    "tuning_fraction_of_train": 0.15,
+    "n_trials_stage1": 50,
+    "n_trials_stage2": 50,
+    "threshold_candidates": 201
+  },
+  "training": {
+    "early_stopping_rounds": 50,
+    "max_estimators": 5000
+  },
+  "outputs": {
+    "models_dir": "models",
+    "results_dir": "results",
+    "reports_dir": "reports"
+  },
+  "hardware": {
+    "stage2_use_gpu": true,
+    "stage2_gpu_devices": "0",
+    "catboost_thread_count": -1
+  },
+  "synthetic_data": {
+    "enabled_if_missing": false,
+    "path": "data/synthetic_dataset.csv",
+    "n_rows": 20000
+  }
+}

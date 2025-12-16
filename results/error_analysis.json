@@ -1,0 +1,143 @@
+{
+  "top_confusion_pairs": [
+    {
+      "true": "UDP-lag",
+      "pred": "UDP_Attack",
+      "count": 199
+    },
+    {
+      "true": "UDP_Attack",
+      "pred": "UDP-lag",
+      "count": 184
+    },
+    {
+      "true": "DrDoS_DNS",
+      "pred": "LDAP_Attack",
+      "count": 127
+    },
+    {
+      "true": "UDP_Attack",
+      "pred": "MSSQL_Attack",
+      "count": 74
+    },
+    {
+      "true": "DrDoS_DNS",
+      "pred": "MSSQL_Attack",
+      "count": 70
+    },
+    {
+      "true": "MSSQL_Attack",
+      "pred": "DrDoS_SNMP",
+      "count": 69
+    },
+    {
+      "true": "DrDoS_SNMP",
+      "pred": "LDAP_Attack",
+      "count": 63
+    },
+    {
+      "true": "DrDoS_DNS",
+      "pred": "DrDoS_SNMP",
+      "count": 60
+    },
+    {
+      "true": "MSSQL_Attack",
+      "pred": "DrDoS_DNS",
+      "count": 56
+    },
+    {
+      "true": "Syn",
+      "pred": "Portmap",
+      "count": 56
+    },
+    {
+      "true": "LDAP_Attack",
+      "pred": "DrDoS_DNS",
+      "count": 51
+    },
+    {
+      "true": "LDAP_Attack",
+      "pred": "DrDoS_SNMP",
+      "count": 51
+    },
+    {
+      "true": "Syn",
+      "pred": "UDP-lag",
+      "count": 49
+    },
+    {
+      "true": "DrDoS_NTP",
+      "pred": "DrDoS_DNS",
+      "count": 39
+    },
+    {
+      "true": "NetBIOS_Attack",
+      "pred": "Portmap",
+      "count": 37
+    }
+  ],
+  "lowest_recall_attack_classes": [
+    {
+      "class": "DrDoS_DNS",
+      "precision": 0.5454545454545454,
+      "recall": 0.4581818181818182,
+      "f1": 0.4980237154150198,
+      "support": 550.0
+    },
+    {
+      "class": "Portmap",
+      "precision": 0.2938388625592417,
+      "recall": 0.6078431372549019,
+      "f1": 0.3961661341853035,
+      "support": 102.0
+    },
+    {
+      "class": "NetBIOS_Attack",
+      "precision": 0.5450643776824035,
+      "recall": 0.679144385026738,
+      "f1": 0.6047619047619047,
+      "support": 187.0
+    },
+    {
+      "class": "LDAP_Attack",
+      "precision": 0.6296296296296297,
+      "recall": 0.7788844621513944,
+      "f1": 0.6963490650044524,
+      "support": 502.0
+    },
+    {
+      "class": "DrDoS_SNMP",
+      "precision": 0.6360078277886497,
+      "recall": 0.7965686274509803,
+      "f1": 0.7072905331882481,
+      "support": 408.0
+    }
+  ],
+  "hypotheses": [
+    {
+      "true": "UDP-lag",
+      "pred": "UDP_Attack",
+      "hypothesis": "Likely confusion due to overlapping flow-rate/timing features or shared protocol behavior."
+    },
+    {
+      "true": "UDP_Attack",
+      "pred": "UDP-lag",
+      "hypothesis": "Likely confusion due to overlapping flow-rate/timing features or shared protocol behavior."
+    },
+    {
+      "true": "DrDoS_DNS",
+      "pred": "LDAP_Attack",
+      "hypothesis": "Likely confusion due to overlapping flow-rate/timing features or shared protocol behavior."
+    },
+    {
+      "true": "UDP_Attack",
+      "pred": "MSSQL_Attack",
+      "hypothesis": "Likely confusion due to overlapping flow-rate/timing features or shared protocol behavior."
+    },
+    {
+      "true": "DrDoS_DNS",
+      "pred": "MSSQL_Attack",
+      "hypothesis": "Likely confusion due to overlapping flow-rate/timing features or shared protocol behavior."
+    }
+  ]
+}

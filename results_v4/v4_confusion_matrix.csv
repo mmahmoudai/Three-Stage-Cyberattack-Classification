@@ -1,0 +1,14 @@
+,Benign,DrDoS_DNS,DrDoS_NTP,DrDoS_SNMP,LDAP_Attack,MSSQL_Attack,NetBIOS_Attack,Portmap,Syn,TFTP,UDP-lag,UDPLag,UDP_Attack
+Benign,14673,0,0,0,0,0,2,0,0,0,0,0,0
+DrDoS_DNS,0,536,0,0,0,1,0,0,0,0,0,0,13
+DrDoS_NTP,1,0,18204,0,0,0,0,0,0,0,0,0,0
+DrDoS_SNMP,0,0,0,408,0,0,0,0,0,0,0,0,0
+LDAP_Attack,1,0,0,0,497,3,1,0,0,0,0,0,0
+MSSQL_Attack,0,8,0,0,1,2198,0,0,0,0,0,0,3
+NetBIOS_Attack,1,0,0,0,2,0,183,0,0,0,0,0,0
+Portmap,0,0,0,0,0,0,0,103,0,0,0,0,0
+Syn,5,0,0,0,0,0,0,0,7399,1,0,0,1
+TFTP,3,0,0,0,0,1,0,0,1,14832,0,1,0
+UDP-lag,0,0,0,0,0,1,0,0,0,0,1202,0,128
+UDPLag,1,0,0,0,0,0,1,0,0,0,0,4,2
+UDP_Attack,0,8,0,0,0,2,0,1,0,0,113,5,4147

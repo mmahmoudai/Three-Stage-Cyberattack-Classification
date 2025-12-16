@@ -1,0 +1,4 @@
+model,task,macro_f1,weighted_f1,accuracy
+RandomForest,Single-stage multiclass,76.71%,97.30%,97.31%
+LightGBM,Single-stage multiclass,79.35%,97.80%,97.85%
+Two-Stage (LightGBM+CatBoost),End-to-End,79.54%,97.56%,97.47%

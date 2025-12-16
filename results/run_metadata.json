@@ -1,0 +1,59 @@
+{
+  "config": {
+    "seed": 42,
+    "data": {
+      "csv_path": "data/cicddos2019_dataset.csv",
+      "protocol_col": "Protocol",
+      "class_col": "Class",
+      "category_col": "Category",
+      "benign_label": "Benign",
+      "attack_label": "Attack"
+    },
+    "split": {
+      "train_size": 0.7,
+      "val_size": 0.15,
+      "test_size": 0.15
+    },
+    "tuning": {
+      "enabled": false,
+      "tuning_fraction_of_train": 0.15,
+      "n_trials_stage1": 50,
+      "n_trials_stage2": 50,
+      "threshold_candidates": 201
+    },
+    "training": {
+      "early_stopping_rounds": 50,
+      "max_estimators": 5000
+    },
+    "outputs": {
+      "models_dir": "models",
+      "results_dir": "results",
+      "reports_dir": "reports"
+    },
+    "hardware": {
+      "stage2_use_gpu": true,
+      "stage2_gpu_devices": "0",
+      "catboost_thread_count": -1
+    },
+    "synthetic_data": {
+      "enabled_if_missing": false,
+      "path": "data/synthetic_dataset.csv",
+      "n_rows": 20000
+    }
+  },
+  "env": {
+    "timestamp_utc": "2025-12-14T12:28:30Z",
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "versions": {
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "sklearn": "1.5.1",
+      "lightgbm": "4.6.0",
+      "catboost": "1.2.8",
+      "optuna": "4.6.0",
+      "matplotlib": "3.9.2",
+      "seaborn": "0.13.2"
+    }
+  }
+}

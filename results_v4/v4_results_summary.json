@@ -1,0 +1,15 @@
+{
+  "accuracy": 0.995177594361495,
+  "macro_precision": 0.9391690134033325,
+  "macro_recall": 0.9472613572904008,
+  "macro_f1": 0.9427819847875383,
+  "weighted_f1": 0.9951796944755555,
+  "mcc": 0.9939533470605093,
+  "stage3_corrections": {
+    "total_reviewed": 205,
+    "total_corrected": 116,
+    "udp_group_corrected": 98,
+    "dns_group_corrected": 15,
+    "minority_group_corrected": 3
+  }
+}
